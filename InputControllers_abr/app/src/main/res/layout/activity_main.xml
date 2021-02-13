@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear1"
+    tools:context=".MainActivity">
+  <ImageButton
+      android:layout_width="100sp"
+      android:layout_height="100sp"
+      android:layout_gravity="center"
+      android:layout_marginTop="20sp"
+      android:src="@drawable/masks"
+      android:onClick="img"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Gender"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:layout_marginTop="20sp"/>
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/rg1">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/rb1"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FeMale"
+        android:id="@+id/rb2"/>
+
+  </RadioGroup>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Programming Languages"
+      android:textSize="24sp"
+      android:gravity="center"
+      android:textStyle="bold"/>
+
+  <CheckBox
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/ch1"
+      android:text="C,C++"/>
+  <CheckBox
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/ch2"
+      android:text="Java"/>
+  <CheckBox
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/ch3"
+      android:text="Python"/>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="Submit"
+      android:onClick="submit"/>
+  <Switch
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/switch1"
+      android:layout_gravity="center"
+      android:layout_marginTop="20sp"
+      android:onClick="changeColor"/>
+  <Spinner
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/spinner1"
+      android:layout_marginTop="10sp"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Time"
+      android:textSize="24sp"
+      android:gravity="center"
+      android:textStyle="bold"/>
+
+  <TextClock
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:format12Hour="hh:mm:ss "
+      android:layout_gravity="center"
+      android:textColor="#FFAB00"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      android:padding="16sp"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="DatePicker"
+      android:textSize="24sp"
+      android:gravity="center"
+      android:textStyle="bold"/>
+  <DatePicker
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/datepicker1"
+      android:layout_marginTop="20sp"/>
+  <TimePicker
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/time1"
+      android:layout_marginTop="20sp"/>
+
+
+</LinearLayout>
+</ScrollView>
